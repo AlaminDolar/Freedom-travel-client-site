@@ -27,7 +27,7 @@ const AddNewService = () => {
       data.img = randomImage();
     }
     axios
-      .post("http://localhost:5000/services", data)
+      .post("https://evening-escarpment-59616.herokuapp.com/services", data)
       .then((res) => {
         if (res.data.insertedId) {
           // success message

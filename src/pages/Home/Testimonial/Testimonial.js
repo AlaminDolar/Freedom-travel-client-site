@@ -8,7 +8,7 @@ const Testimonial = () => {
   const [persons, setPerson] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:5000/post")  
+      .get("https://evening-escarpment-59616.herokuapp.com/post")  
       
       .then((res) => {
         setPerson(res.data);

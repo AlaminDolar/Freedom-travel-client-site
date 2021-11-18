@@ -8,7 +8,7 @@ const HotelService = () => {
   useEffect(() => {
     axios
       .get(
-        "http://localhost:5000/services?categories=hotel"
+        "https://evening-escarpment-59616.herokuapp.com/services?categories=hotel"
       )
       .then((res) => {
         setHotels(res.data);

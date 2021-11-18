@@ -19,7 +19,7 @@ const AboutUs = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/specialties")
+      .get("https://evening-escarpment-59616.herokuapp.com/specialties")
       .then((res) => {
         setSpecialties(res.data);
       })

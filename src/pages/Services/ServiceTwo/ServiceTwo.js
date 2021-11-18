@@ -8,7 +8,7 @@ const ServiceTwo = () => {
   useEffect(() => {
     axios
       .get(
-        "http://localhost:5000/services?categories=low"
+        "https://evening-escarpment-59616.herokuapp.com/services?categories=low"
       )
       .then((res) => {
         setServices(res.data);
