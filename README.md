@@ -2,7 +2,7 @@
 
 ## Live site link
 
-[live site Link]() : 
+[live site Link](https://freedom-travel-96bae.web.app/) : https://freedom-travel-96bae.web.app/
 
 ## Using Technology and Programming Language
 
