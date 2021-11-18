@@ -1,0 +1,26 @@
+.hero-main {
+  background-color: rgba(0, 0, 0, 0.445);
+  background-image: url("https://images.unsplash.com/photo-1557185056-45d242240206?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  background-blend-mode: overlay;
+}
+
+.hero-book-btn {
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  background: #04afef;
+  border: 1px solid #04afef;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.4s;
+}
+
+.hero-book-btn:hover {
+  background: transparent;
+  color: #04afef;
+}

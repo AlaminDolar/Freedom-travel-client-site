@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+}
+
+.admin-delete-btn {
+  cursor: pointer;
+  display: inline-block;
+  color: red;
+  height: 25px;
+}
+
+.admin-approved-btn {
+  cursor: pointer;
+}
+
+.table th,
+td {
+  border: none !important;
+}
+
+.approved,
+.pending {
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-weight: 500;
+  color: white;
+}
+
+.approved {
+  background: rgb(1, 160, 1);
+}
+
+.pending {
+  background: #0094ca;
+}
+
+._book-btn {
+  border: none;
+  transition: 0.4s;
+  background: #e2aa03;
+  color: white;
+  padding: 5px 15px;
+  font-weight: 600;
+  border-radius: 2px;
+}
+
+._book-btn:hover {
+  background: #080d11;
+  color: #ffc107;
+}

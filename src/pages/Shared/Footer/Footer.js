@@ -1,0 +1,85 @@
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import "./Footer.css";
+import { NavLink } from "react-router-dom";
+import { footerImages } from "../../../utilities/utilities";
+import { HashLink } from "react-router-hash-link";
+
+const Footer = () => {
+  return (
+    <Container fluid className="footer py-5 text-start">
+      <Container>
+        <Row xs={1} md={2} lg={3} className="g-5">
+          {/* userful link  */}
+          <Col>
+            <h5>Useful Link</h5>
+            <hr />
+            <br />
+            <ul className="useful-links">
+              <li>
+                <HashLink to="/home#home">&#62; Home</HashLink>
+              </li>
+              <li>
+                <HashLink to="/home#services"> &#62; Services </HashLink>
+              </li>
+
+              <li>
+                <HashLink to="/home#service_2">&#62; Special Offer</HashLink>
+              </li>
+
+              <li>
+                <HashLink to="/home#hotel">&#62; Hotels</HashLink>
+              </li>
+
+              <li>
+                <NavLink to="/login">&#62; Login</NavLink>
+              </li>
+              <li>
+                <NavLink to="/">&#62; admin</NavLink>
+              </li>
+            </ul>
+          </Col>
+          <Col>
+            {/* post single items  */}
+            <h5>Contact Information</h5>
+            <hr />
+            <br />
+            <div>
+              <strong>Email :</strong> <br />
+              <p className="email"> alamin.dolar@gmail.com</p>
+              <p className="email">alamin.d.a@gmail.com</p>
+              <strong>Phone : </strong> <br />
+              <p className="phone">01974-818291</p>
+              <p className="phone">01934-559622</p>
+            </div>
+          </Col>
+          <Col>
+            <h5>Gallery Site</h5>
+            <hr />
+            <br />
+            {/* footer mini photo gallery  */}
+            <Row xs={2} md={3} className="g-3">
+              {footerImages.map((img) => (
+                <Col key={img.slice(0, 20)} className="overflow-hidden">
+                  <img
+                    src={img}
+                    className="img-fluid gallery-img"
+                    alt="footer img"
+                  />
+                </Col>
+              ))}
+            </Row>
+          </Col>
+        </Row>
+
+        <br />
+        <br />
+        <p className="text-center">
+          Copyright © 2021 Alamin Dolar. Rights Reserved.
+        </p>
+      </Container>
+    </Container>
+  );
+};
+
+export default Footer;
